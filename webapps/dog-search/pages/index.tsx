@@ -131,10 +131,11 @@ export default function Home() {
                         style={{
                           width: '100%',
                           height: '300px',
-                          aspectRatio: 1,
+                          aspectRatio: '1',
                           borderRadius: 4,
                           padding: 10,
                         }}
+                        alt={`Image of ${animal.name}`}
                         src={animal.photos[0].full}
                       />
                     </div>
