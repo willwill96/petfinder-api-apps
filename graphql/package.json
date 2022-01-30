@@ -1,0 +1,6 @@
+{
+    "workspaces": [
+        "petfinder-graphql",
+        "app"
+    ]
+}

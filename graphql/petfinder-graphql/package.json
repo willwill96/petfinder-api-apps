@@ -1,0 +1,37 @@
+{
+  "name": "@willwill96/petfinder-graphql",
+  "version": "0.0.1",
+  "description": "contains files and utilities to bootstrap a graphql instance wrapping the petfinder api",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "postbuild": "cp src/schema/schema.graphql dist/schema/schema.graphql",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/willwill96/petfinder-api-apps.git"
+  },
+  "keywords": [
+    "petfinder"
+  ],
+  "author": "William Will",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/willwill96/petfinder-api-apps/issues"
+  },
+  "homepage": "https://github.com/willwill96/petfinder-api-apps#readme",
+  "dependencies": {
+    "graphql-tag": "^2.12.6",
+    "isomorphic-fetch": "^3.0.0",
+    "node-cache": "^5.1.2",
+    "query-string": "^7.1.0"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "^2.4.0",
+    "@graphql-codegen/typescript-operations": "^2.2.2",
+    "graphql": "^15.8.0",
+    "graphql-tools": "^8.2.0",
+    "typescript": "^4.5.5"
+  }
+}

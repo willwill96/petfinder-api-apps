@@ -1,0 +1,14 @@
+.git
+.project
+.vscode
+.settings
+.vs_code
+.settings
+.storybook/
+target/
+**/node_modules/**
+test/
+**/dist/**
+schema.json
+yarn-error.log
+.devcontainer/
