@@ -101,7 +101,7 @@ export default function Home() {
                   setLocation(locationInput)
                 }}
               >
-                Find me some pets!
+                Find some pets to adopt!
               </Button>
             </div>
           </Card>
