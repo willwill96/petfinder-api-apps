@@ -1,0 +1,5 @@
+.card {
+    @apply @bg-sky-800 @rounded-md @px-5;
+    min-width: 300px;
+    min-height: 300px;
+}

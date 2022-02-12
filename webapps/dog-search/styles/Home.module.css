@@ -11,15 +11,6 @@
   justify-content: center;
   align-items: center;
 }
-.test {
-  @apply @text-red-500;
-}
-
-.card {
-  @apply @bg-gray-500 @rounded-md @px-5;
-  min-width: 300px;
-  min-height: 300px;
-}
 
 .footer {
   display: flex;

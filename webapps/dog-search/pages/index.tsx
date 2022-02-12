@@ -4,6 +4,7 @@ import Button from '../components/Button'
 
 import styles from '../styles/Home.module.css'
 import { gql, useQuery } from '@apollo/client'
+import Card from '../components/Card'
 // import { initializeApollo, addApolloState } from '../lib/apollo-client'
 
 const animalsGql = gql`
@@ -70,7 +71,7 @@ export default function Home() {
       )}
       <main className={`${styles.main}`}>
         {!location && (
-          <div className={styles.card}>
+          <Card>
             <h2 style={{ textAlign: 'center', color: '#F0F0F0' }}>
               Enter your zip code
             </h2>
@@ -102,7 +103,7 @@ export default function Home() {
                 Fetch
               </Button>
             </div>
-          </div>
+          </Card>
         )}
         {location && data && data.animals.animals && (
           <div
