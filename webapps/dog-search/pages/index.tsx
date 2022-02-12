@@ -1,5 +1,7 @@
 import Head from 'next/head'
 import { useState } from 'react'
+import Button from '../components/Button'
+
 import styles from '../styles/Home.module.css'
 import { gql, useQuery } from '@apollo/client'
 // import { initializeApollo, addApolloState } from '../lib/apollo-client'
@@ -53,7 +55,7 @@ export default function Home() {
         </a>
       </header>
       {location && (
-        <button
+        <Button
           onClick={() => {
             fetchMore({
               variables: {
@@ -64,9 +66,9 @@ export default function Home() {
           }}
         >
           Fetch more results
-        </button>
+        </Button>
       )}
-      <main className={styles.main}>
+      <main className={`${styles.main}`}>
         {!location && (
           <div className={styles.card}>
             <h2 style={{ textAlign: 'center', color: '#F0F0F0' }}>
@@ -89,15 +91,16 @@ export default function Home() {
                 style={{ lineHeight: '30px', fontSize: '24px', width: '100%' }}
               />
             </div>
-            <button
+            <Button
               disabled={locationInput.length !== 5}
               onClick={() => {
                 setLocation(locationInput)
               }}
               style={{ width: '100%' }}
+              className={`${styles.test}`}
             >
               Fetch
-            </button>
+            </Button>
           </div>
         )}
         {location && data && data.animals.animals && (
@@ -121,9 +124,9 @@ export default function Home() {
                         style={{
                           textAlign: 'center',
                           fontSize: 24,
-                          color: '#d0a0d0',
                           fontWeight: 500,
                         }}
+                        className="@text-sky-200"
                       >
                         {animal.name}
                       </div>

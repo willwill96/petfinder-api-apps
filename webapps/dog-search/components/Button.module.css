@@ -1,0 +1,7 @@
+
+:global(.theme-pet) .button {
+        @apply @text-sky-900 @border-4 @border-sky-900 @px-2 @rounded-lg hover:@bg-gray-300;
+}
+.unused {
+    @apply @text-red-900 @text-xl;
+}
