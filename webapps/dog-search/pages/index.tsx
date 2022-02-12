@@ -91,16 +91,17 @@ export default function Home() {
                 style={{ lineHeight: '30px', fontSize: '24px', width: '100%' }}
               />
             </div>
-            <Button
-              disabled={locationInput.length !== 5}
-              onClick={() => {
-                setLocation(locationInput)
-              }}
-              style={{ width: '100%' }}
-              className={`${styles.test}`}
-            >
-              Fetch
-            </Button>
+            <div className="@px-1 @my-4">
+              <Button
+                className="@w-full"
+                disabled={locationInput.length !== 5}
+                onClick={() => {
+                  setLocation(locationInput)
+                }}
+              >
+                Fetch
+              </Button>
+            </div>
           </div>
         )}
         {location && data && data.animals.animals && (

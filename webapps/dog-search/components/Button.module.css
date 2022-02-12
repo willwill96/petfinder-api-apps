@@ -1,7 +1,14 @@
-
-:global(.theme-pet) .button {
-        @apply @text-sky-900 @border-4 @border-sky-900 @px-2 @rounded-lg hover:@bg-gray-300;
-}
-.unused {
-    @apply @text-red-900 @text-xl;
+.button {
+    /* Colors */
+    @apply @text-sky-800 @border-sky-800 @bg-white disabled:@text-gray-600 disabled:@border-gray-600 disabled:@bg-gray-500 hover:@bg-gray-300;
+    /* Borders */
+    @apply @border-2 @rounded-md;
+    /* Font */
+    @apply @font-bold @text-lg;
+    /* Spacing */
+    @apply @px-6 @py-1;
+    /* Cursor */
+    @apply @cursor-pointer disabled:@cursor-default;
+    /* Transitions / Animations */
+    @apply @transition-colors @ease-in-out;
 }
