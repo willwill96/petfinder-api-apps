@@ -5,6 +5,7 @@ import Button from '../components/Button'
 import styles from '../styles/Home.module.css'
 import { gql, useQuery } from '@apollo/client'
 import Card from '../components/Card'
+import Input from '../components/Input'
 // import { initializeApollo, addApolloState } from '../lib/apollo-client'
 
 const animalsGql = gql`
@@ -72,11 +73,11 @@ export default function Home() {
       <main className={`${styles.main}`}>
         {!location && (
           <Card>
-            <h2 style={{ textAlign: 'center', color: '#F0F0F0' }}>
+            <h2 className="@text-center @my-2 @text-white @text-3xl">
               Enter your zip code
             </h2>
-            <div style={{ textAlign: 'center' }}>
-              <input
+            <div className="@my-2">
+              <Input
                 value={locationInput}
                 onChange={(event) => {
                   if (!event.target.value.match(/\d*/)) return
@@ -100,7 +101,7 @@ export default function Home() {
                   setLocation(locationInput)
                 }}
               >
-                Fetch
+                Find me some pets!
               </Button>
             </div>
           </Card>
