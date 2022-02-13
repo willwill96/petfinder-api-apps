@@ -8,20 +8,24 @@ const Header = () => {
     <header className={styles['header']}>
       <span className={styles['header-text']}>
         Powered by the&nbsp;
-        <a href="https://www.petfinder.com/developers/v2/docs/">
+        <a
+          className={styles['petfinder-link']}
+          target="_blank"
+          href="https://www.petfinder.com/developers/v2/docs/"
+          rel="noreferrer"
+        >
           Petfinder API
         </a>
       </span>
       <div className="@flex-grow" />
-      <a
-        href="https://github.com/willwill96/petfinder-api-apps"
+      <form
+        action="https://github.com/willwill96/petfinder-api-apps"
         target="_blank"
-        rel="noreferrer"
       >
         <IconButton>
           <FontAwesomeIcon icon={faGithub} />
         </IconButton>
-      </a>
+      </form>
     </header>
   )
 }

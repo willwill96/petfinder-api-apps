@@ -1,6 +1,4 @@
 .card {
-    @apply @bg-sky-800 @rounded-lg @px-8 @py-4;
-    @apply @h-fit
-    /* min-width: 300px;
-    min-height: 300px; */
+    @apply @bg-sky-800 @rounded-lg;
+    @apply @h-fit;
 }

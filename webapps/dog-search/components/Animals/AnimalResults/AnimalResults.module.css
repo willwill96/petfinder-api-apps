@@ -1,0 +1,19 @@
+.root {
+    /* Grid */
+    @apply @grid @grid-cols-2 @gap-4;
+    @apply lg:@grid-cols-4 sm:@grid-cols-3;
+    /* Sizing */
+    @apply @h-fit @w-full;
+    /* Spacing */
+    @apply @p-4 lg:@px-8;
+    /* Misc */
+    @apply @overflow-y-auto;
+}
+
+.animal-img {
+    @apply @w-full @aspect-square @rounded-b-lg @h-full;
+}
+
+.card-title {
+    @apply @text-2xl @font-semibold @text-center;
+}
