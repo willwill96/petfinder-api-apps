@@ -1,0 +1,21 @@
+.header {
+    /* Flex */
+    @apply @flex @justify-center @items-center;
+    /* Colors */
+    @apply @bg-sky-800;
+    /* Sizing */
+    @apply @w-full;
+    @apply @h-12 lg:@h-14;
+    /* Spacing */
+    @apply @px-4 lg:@px-8;
+    /* Borders */
+    @apply @rounded-b-sm;
+}
+
+.header-text {
+    @apply @text-sm lg:@text-lg;
+}
+
+.github-icon {
+    @apply @w-6 lg:@w-8 @cursor-pointer @transition-transform hover:@scale-110;
+}

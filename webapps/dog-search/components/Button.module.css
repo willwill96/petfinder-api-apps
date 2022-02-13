@@ -1,6 +1,6 @@
 .button {
     /* Colors */
-    @apply @text-sky-800 @border-sky-400 @bg-gray-200 disabled:@text-gray-600 disabled:@border-gray-600 disabled:@bg-gray-500 hover:@bg-gray-300;
+    @apply @text-sky-800 @border-gray-400 @bg-gray-200 disabled:@text-gray-600 disabled:@border-gray-600 disabled:@bg-gray-500 hover:@bg-gray-300;
     /* Borders */
     @apply @border-2 @rounded-md;
     /* Font */
