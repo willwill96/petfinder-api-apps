@@ -5,6 +5,7 @@ import { gql, useQuery } from '@apollo/client'
 import Card from '../components/Card'
 import Input from '../components/Input'
 import AnimalResults from '../components/Animals/AnimalResults'
+import EntryInterview from '../components/EntryInterview'
 // import { initializeApollo, addApolloState } from '../lib/apollo-client'
 
 const animalsGql = gql`
@@ -23,7 +24,6 @@ const animalsGql = gql`
 
 export default function Home() {
   const [location, setLocation] = useState('')
-  const [locationInput, setLocationInput] = useState('')
   const [currentPage, setCurrentPage] = useState(1)
   const { data, fetchMore } = useQuery(animalsGql, {
     variables: {
@@ -67,40 +67,7 @@ export default function Home() {
       )} */}
       <main className="@h-full @flex @justify-center">
         {!location && (
-          <Card className="@px-8 @py-4">
-            <div className="@text-center @mb-10 @text-gray-200 @text-3xl">
-              <span>Enter your zip code</span>
-            </div>
-            <div className="@my-2">
-              <Input
-                className="@text-center"
-                value={locationInput}
-                onChange={(event) => {
-                  if (!event.target.value.match(/\d*/)) return
-                  setLocationInput(
-                    event.target.value.match(/\d{0,5}/)[0].substring(0, 5)
-                  )
-                }}
-                onKeyDown={(e) => {
-                  if (e.key === 'Enter' && locationInput.length === 5) {
-                    setLocation(locationInput)
-                  }
-                }}
-                style={{ lineHeight: '30px', fontSize: '24px', width: '100%' }}
-              />
-            </div>
-            <div className="@mb-4 @mt-10">
-              <Button
-                className="@w-full"
-                disabled={locationInput.length !== 5}
-                onClick={() => {
-                  setLocation(locationInput)
-                }}
-              >
-                Find some pets to adopt!
-              </Button>
-            </div>
-          </Card>
+          <EntryInterview onSubmit={({ location }) => setLocation(location)} />
         )}
         {location && <AnimalResults animals={mockAnimals} />}
         {/* {location && data && data.animals.animals && (
