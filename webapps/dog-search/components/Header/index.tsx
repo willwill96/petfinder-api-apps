@@ -1,6 +1,7 @@
 import styles from './Header.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import IconButton from '../IconButton'
 
 const Header = () => {
   return (
@@ -17,11 +18,9 @@ const Header = () => {
         target="_blank"
         rel="noreferrer"
       >
-        <FontAwesomeIcon
-          className={styles['github-icon']}
-          icon={faGithub}
-          title="View code on Github"
-        />
+        <IconButton>
+          <FontAwesomeIcon icon={faGithub} />
+        </IconButton>
       </a>
     </header>
   )

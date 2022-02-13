@@ -1,0 +1,4 @@
+.icon-button {
+    @apply @p-1 hover:@bg-gray-100/75 @rounded-full;
+    @apply @w-8 lg:@w-10 @transition-transform hover:@scale-110;
+}

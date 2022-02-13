@@ -15,7 +15,3 @@
 .header-text {
     @apply @text-sm lg:@text-lg;
 }
-
-.github-icon {
-    @apply @w-6 lg:@w-8 @cursor-pointer @transition-transform hover:@scale-110;
-}
