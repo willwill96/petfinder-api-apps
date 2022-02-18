@@ -33,7 +33,7 @@ const useAnimalsQuery = (location: string, page: number) => {
       })
       return acc
     }, [])
-    return { data: { animals: mockAnimals } }
+    return { data: { animals: { animals: mockAnimals } } }
   } else {
     // eslint-disable-next-line react-hooks/rules-of-hooks
     return useQuery(animalsGql, {
@@ -70,7 +70,11 @@ export default function Home(props) {
             }}
           />
         )}
-        {location && <AnimalResults animals={(data && data.animals) || []} />}
+        {location && (
+          <AnimalResults
+            animals={(data && data.animals && data.animals.animals) || []}
+          />
+        )}
       </main>
     </div>
   )
