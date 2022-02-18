@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
 import Button from '../Button'
 import Card from '../Card'
 import Input from '../Input'
@@ -16,12 +16,18 @@ const EntryInterview = (props: Props) => {
   const [locationInput, setLocationInput] = useState('')
   const formValid = locationInput.length === 5
   const form = { location: locationInput }
+
+  const onSubmit = (e: React.FormEvent) => {
+    e.preventDefault()
+    if (!formValid) return
+    props.onSubmit(form)
+  }
   return (
     <Card className={styles['root']}>
       <div className={styles['title']}>
         <span>Enter your zip code</span>
       </div>
-      <form onSubmit={() => formValid && props.onSubmit(form)}>
+      <form onSubmit={onSubmit}>
         <div className="@my-2">
           <Input
             className="@text-center"
