@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Button from '../Button'
 import Card from '../Card'
 import Input from '../Input'
@@ -16,20 +16,29 @@ const EntryInterview = (props: Props) => {
   const [locationInput, setLocationInput] = useState('')
   const formValid = locationInput.length === 5
   const form = { location: locationInput }
-
+  const inputEl = useRef<HTMLInputElement>(null)
+  useEffect(() => {
+    if (!inputEl.current) {
+      console.log('error')
+      return
+    }
+    console.log('trying to focus')
+    inputEl.current.focus()
+  }, [inputEl])
   const onSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     if (!formValid) return
     props.onSubmit(form)
   }
   return (
-    <Card className={styles['root']}>
+    <Card className={`${styles['root']} @animate-slidein`}>
       <div className={styles['title']}>
         <span>Enter your zip code</span>
       </div>
       <form onSubmit={onSubmit}>
         <div className="@my-2">
           <Input
+            ref={inputEl}
             className="@text-center"
             value={locationInput}
             onChange={(event) => {

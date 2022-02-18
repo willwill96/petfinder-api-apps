@@ -3,11 +3,11 @@
     @apply @grid @grid-cols-2 @gap-4;
     @apply lg:@grid-cols-4 sm:@grid-cols-3;
     /* Sizing */
-    @apply @h-fit @w-full;
+    @apply @w-full;
     /* Spacing */
-    @apply @p-4 lg:@px-8;
+
     /* Misc */
-    @apply @overflow-y-auto;
+    /* @apply @overflow-y-auto; */
 }
 
 .animal-img {

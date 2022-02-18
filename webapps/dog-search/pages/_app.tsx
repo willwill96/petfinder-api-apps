@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }) {
     <ApolloProvider client={apolloClient}>
       <div className="@w-full @h-full @flex @items-center @justify-center @flex-col">
         <Header />
-        <div className="@flex-grow @overflow-y-auto @w-full">
+        <div className="@h-full @flex-grow @overflow-y-auto @w-full @p-8">
           <Component {...pageProps} />
         </div>
       </div>

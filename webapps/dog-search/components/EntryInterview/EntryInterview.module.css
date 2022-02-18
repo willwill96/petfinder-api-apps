@@ -1,5 +1,5 @@
 .root {
-    @apply @px-8 @py-4;
+    @apply @px-8 @py-4 @transition-transform @animate-slidein;
 }
 
 .title {
