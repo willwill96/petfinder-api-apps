@@ -70,7 +70,7 @@ export default function Home(props) {
             }}
           />
         )}
-        {location && <AnimalResults animals={data && data.animals} />}
+        {location && <AnimalResults animals={(data && data.animals) || []} />}
       </main>
     </div>
   )
