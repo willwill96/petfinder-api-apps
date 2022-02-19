@@ -2,6 +2,7 @@ import styles from './Header.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import IconButton from '../IconButton'
+import Tooltip from '../Tooltip'
 
 const Header = () => {
   return (
@@ -18,14 +19,17 @@ const Header = () => {
         </a>
       </span>
       <div className="@flex-grow" />
-      <form
-        action="https://github.com/willwill96/petfinder-api-apps"
-        target="_blank"
-      >
-        <IconButton>
-          <FontAwesomeIcon icon={faGithub} />
-        </IconButton>
-      </form>
+      <Tooltip content="View Source Code" alignHorizontal="right">
+        <a
+          href="https://github.com/willwill96/petfinder-api-apps"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <IconButton>
+            <FontAwesomeIcon icon={faGithub} />
+          </IconButton>
+        </a>
+      </Tooltip>
     </header>
   )
 }

@@ -1,0 +1,23 @@
+.tooltip {
+    @apply @relative;
+}
+.tooltip:hover:before {
+    content: attr(data-title);
+    @apply @bg-emerald-800 ;
+    /* Sizing/Spacing */
+    max-width: 220px;
+    @apply @py-1 @px-2;
+    @apply @rounded-sm;
+    @apply @whitespace-nowrap @text-ellipsis @overflow-hidden;
+    /* Positioning */
+    @apply @translate-y-full @translate-x-1/2 @bottom-0 @absolute;
+}
+.tooltip-align-top:hover:before {
+    @apply @-translate-y-full;
+}
+.tooltip-align-right:hover:before {
+    @apply @translate-x-0 @right-0;
+}
+.tooltip-align-left:hover:before {
+    @apply @translate-x-0 @left-0;
+}
