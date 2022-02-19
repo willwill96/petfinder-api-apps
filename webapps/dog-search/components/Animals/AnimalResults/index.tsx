@@ -24,8 +24,8 @@ const AnimalResults = (props: Props) => {
     <div className={styles['root']}>
       {animals.map((animal, i) => {
         return (
-          <a key={i} href={animal.url}>
-            <Card className="hover:@opacity-50 @transition-all @ease-in-out @duration-500 active:@opacity-25">
+          <a key={i} href={animal.url} className={styles['animal-card']}>
+            <Card>
               <div className={styles['card-title']}>
                 <span>{animal.name}</span>
               </div>

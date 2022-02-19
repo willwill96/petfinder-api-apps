@@ -1,13 +1,18 @@
 .root {
     /* Grid */
-    @apply @grid @grid-cols-2 @gap-4;
-    @apply lg:@grid-cols-4 sm:@grid-cols-3;
+    @apply @grid @grid-cols-12 @gap-4;
     /* Sizing */
     @apply @w-full;
     /* Spacing */
-
     /* Misc */
-    /* @apply @overflow-y-auto; */
+    @apply @animate-fadein;
+}
+
+.animal-card {
+    /* Transition */
+    @apply @transition-all @ease-in-out @duration-500 hover:@opacity-50  active:@opacity-25;
+    /* Grid Sizing */
+    @apply @col-span-6 sm:@col-span-4 lg:@col-span-3;
 }
 
 .animal-img {
