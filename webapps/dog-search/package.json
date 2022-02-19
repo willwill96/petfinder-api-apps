@@ -21,7 +21,7 @@
     "next": "12.0.9",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "willwill96-petfinder-graphql": "^0.0.1"
+    "willwill96-petfinder-graphql": "^0.0.2"
   },
   "devDependencies": {
     "@types/react": "^17.0.38",
