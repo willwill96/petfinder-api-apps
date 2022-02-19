@@ -2,7 +2,7 @@
     "name": "app",
     "private": true,
     "dependencies": {
-        "@willwill96/petfinder-graphql": "*",
+        "willwill96-petfinder-graphql": "*",
         "apollo-server-express": "^3.6.2",
         "express": "^4.17.2",
         "ts-node": "^10.4.0"
