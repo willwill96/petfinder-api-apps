@@ -3,7 +3,7 @@
 }
 .tooltip:hover:before {
     content: attr(data-title);
-    @apply @bg-emerald-800 ;
+    @apply @bg-sky-800 ;
     /* Sizing/Spacing */
     max-width: 220px;
     @apply @py-1 @px-2;
