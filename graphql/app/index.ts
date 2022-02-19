@@ -3,7 +3,7 @@ import { ApolloServerPluginLandingPageGraphQLPlayground,
          ApolloServerPluginLandingPageDisabled } from 'apollo-server-core'
 import express from 'express'
 
-import { petFinderGraphQlSchema, generatePetfinderGraphQlContext  } from '@willwill96/petfinder-graphql'
+import { petFinderGraphQlSchema, generatePetfinderGraphQlContext  } from 'willwill96-petfinder-graphql'
 const playgroundEnabled = Boolean(
   process.env['NODE_ENV'] === 'development' || process.env['PLAYGROUND_ENABLED']
 )
