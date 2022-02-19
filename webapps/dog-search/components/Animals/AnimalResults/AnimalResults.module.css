@@ -20,5 +20,5 @@
 }
 
 .card-title {
-    @apply @text-2xl @font-semibold @text-center;
+    @apply @text-2xl @font-semibold @text-center @p-1;
 }

@@ -1,5 +1,7 @@
 .root {
     @apply @px-8 @py-4 @transition-transform @animate-slidein;
+    @apply @bg-gradient-to-b @from-sky-800 @to-emerald-800;
+
 }
 
 .title {
