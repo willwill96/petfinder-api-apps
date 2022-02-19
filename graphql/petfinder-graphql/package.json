@@ -2,10 +2,14 @@
   "name": "@willwill96/petfinder-graphql",
   "version": "0.0.1",
   "description": "contains files and utilities to bootstrap a graphql instance wrapping the petfinder api",
-  "main": "dist/index.js",
+  "main": "index.js",
   "scripts": {
+    "prebuild": "rm -rf dist/",
     "build": "tsc",
-    "postbuild": "cp src/schema/schema.graphql dist/schema/schema.graphql",
+    "copy:graphql": "cp src/schema/schema.graphql dist/schema/schema.graphql",
+    "copy:package": "cp package.json dist/package.json",
+    "copy:readme": "cp README.md dist/README.md",
+    "postbuild": "npm run copy:graphql && npm run copy:package npm run copy:readme",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
