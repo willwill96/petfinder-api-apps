@@ -21,4 +21,6 @@
 
 .card-title {
     @apply @text-2xl @font-semibold @text-center @p-1;
+    /* Text overflow */
+    @apply @text-ellipsis @overflow-hidden @whitespace-nowrap;
 }
