@@ -3,8 +3,7 @@ import styles from './AnimalResults.module.css'
 
 interface Animal {
   photos: {
-    full: string
-    small: string
+    medium: string
   }[]
   url: string
   name: string
@@ -18,7 +17,7 @@ const AnimalResults = (props: Props) => {
   if (props.loading) return null
 
   const animals = props.animals.filter((animal) =>
-    Boolean(animal.photos && animal.photos[0] && animal.photos[0].small)
+    Boolean(animal.photos && animal.photos[0] && animal.photos[0].medium)
   )
 
   return (
@@ -33,7 +32,7 @@ const AnimalResults = (props: Props) => {
               <img
                 className={styles['animal-img']}
                 alt={`Image of ${animal.name}`}
-                src={animal.photos[0].small}
+                src={animal.photos[0].medium}
               />
             </Card>
           </a>

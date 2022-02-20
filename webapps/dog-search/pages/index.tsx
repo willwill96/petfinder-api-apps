@@ -11,8 +11,7 @@ const animalsGql = gql`
       animals {
         name
         photos {
-          full
-          small
+          medium
         }
         url
       }
