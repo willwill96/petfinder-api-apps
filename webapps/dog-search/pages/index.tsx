@@ -47,9 +47,10 @@ const useAnimalsQuery = (location: string, page: number) => {
 }
 
 export default function Home(props) {
-  const [location, setLocation] = useState(props.location || '')
+  const [initialLocation] = useState(props.location || '')
   const [currentPage, setCurrentPage] = useState(1)
   const router = useRouter()
+  const location = router.query.location || initialLocation
 
   const { data } = useAnimalsQuery(location, 1)
   return (
@@ -68,7 +69,6 @@ export default function Home(props) {
         {!location && (
           <EntryInterview
             onSubmit={({ location: newLoc }) => {
-              setLocation(newLoc)
               router.push(`/?location=${newLoc}`, undefined, {
                 shallow: true,
               })
