@@ -33,7 +33,7 @@ const AnimalResults = (props: Props) => {
               <img
                 className={styles['animal-img']}
                 alt={`Image of ${animal.name}`}
-                src={animal.photos[0].full}
+                src={animal.photos[0].small}
               />
             </Card>
           </a>
