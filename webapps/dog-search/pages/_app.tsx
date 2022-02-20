@@ -8,9 +8,9 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <ApolloProvider client={apolloClient}>
-      <div className="@w-full @h-full @flex @items-center @justify-center @flex-col">
+      <div className="tw-w-full tw-h-full tw-flex tw-items-center tw-justify-center tw-flex-col">
         <Header />
-        <div className="@h-full @flex-grow @overflow-y-auto @w-full @px-8">
+        <div className="tw-h-full tw-flex-grow tw-overflow-y-auto tw-w-full tw-px-8">
           <Component {...pageProps} />
         </div>
       </div>

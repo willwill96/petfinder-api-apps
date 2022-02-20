@@ -18,7 +18,7 @@ const Header = () => {
           Petfinder API
         </a>
       </span>
-      <div className="@flex-grow" />
+      <div className="tw-flex-grow" />
       <Tooltip content="View Source Code" alignHorizontal="right">
         <a
           href="https://github.com/willwill96/petfinder-api-apps"

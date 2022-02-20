@@ -1,23 +1,23 @@
 .tooltip {
-    @apply @relative;
+    @apply tw-relative;
 }
 .tooltip:hover:before {
     content: attr(data-title);
-    @apply @bg-sky-800 ;
+    @apply tw-bg-sky-800 ;
     /* Sizing/Spacing */
     max-width: 220px;
-    @apply @py-1 @px-2;
-    @apply @rounded-sm;
-    @apply @whitespace-nowrap @text-ellipsis @overflow-hidden;
+    @apply tw-py-1 tw-px-2;
+    @apply tw-rounded-sm;
+    @apply tw-whitespace-nowrap tw-text-ellipsis tw-overflow-hidden;
     /* Positioning */
-    @apply @translate-y-full @translate-x-1/2 @bottom-0 @absolute;
+    @apply tw-translate-y-full tw-translate-x-1/2 tw-bottom-0 tw-absolute;
 }
 .tooltip-align-top:hover:before {
-    @apply @-translate-y-full;
+    @apply tw--translate-y-full;
 }
 .tooltip-align-right:hover:before {
-    @apply @translate-x-0 @right-0;
+    @apply tw-translate-x-0 tw-right-0;
 }
 .tooltip-align-left:hover:before {
-    @apply @translate-x-0 @left-0;
+    @apply tw-translate-x-0 tw-left-0;
 }

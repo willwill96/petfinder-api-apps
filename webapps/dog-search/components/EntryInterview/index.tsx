@@ -30,15 +30,15 @@ const EntryInterview = (props: Props) => {
     props.onSubmit(form)
   }
   return (
-    <Card className={`${styles['root']} @animate-slidein`}>
+    <Card className={`${styles['root']} tw-animate-slidein`}>
       <div className={styles['title']}>
         <span>Enter your zip code</span>
       </div>
       <form onSubmit={onSubmit}>
-        <div className="@my-2">
+        <div className="tw-my-2">
           <Input
             ref={inputEl}
-            className="@text-center"
+            className="tw-text-center"
             value={locationInput}
             onChange={(event) => {
               if (!event.target.value.match(/\d*/)) return
@@ -49,8 +49,8 @@ const EntryInterview = (props: Props) => {
             style={{ lineHeight: '30px', fontSize: '24px', width: '100%' }}
           />
         </div>
-        <div className="@mb-4 @mt-10">
-          <Button className="@w-full" disabled={locationInput.length !== 5}>
+        <div className="tw-mb-4 tw-mt-10">
+          <Button className="tw-w-full" disabled={locationInput.length !== 5}>
             Find some pets to adopt!
           </Button>
         </div>
