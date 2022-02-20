@@ -1,4 +1,5 @@
 import Card from '../../Card'
+import Loading from '../../Loading'
 import styles from './AnimalResults.module.css'
 
 interface Animal {
@@ -14,7 +15,7 @@ interface Props {
   animals: Animal[]
 }
 const AnimalResults = (props: Props) => {
-  if (props.loading) return null
+  if (props.loading) return <Loading />
 
   const animals = props.animals.filter((animal) =>
     Boolean(animal.photos && animal.photos[0] && animal.photos[0].medium)

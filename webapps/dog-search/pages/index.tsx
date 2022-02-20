@@ -4,6 +4,7 @@ import { gql, useQuery } from '@apollo/client'
 import AnimalResults from '../components/Animals/AnimalResults'
 import EntryInterview from '../components/EntryInterview'
 import { useRouter } from 'next/router'
+import AnimalResultsContainer from '../containers/AnimalResults'
 
 const animalsGql = gql`
   query AnimalsQuery($location: String, $page: Int) {
@@ -34,7 +35,7 @@ const useAnimalsQuery = (location: string, page: number) => {
       })
       return acc
     }, [])
-    return { data: { animals: { animals: mockAnimals } } }
+    return { data: { animals: { animals: mockAnimals } }, loading: true }
   } else {
     // eslint-disable-next-line react-hooks/rules-of-hooks
     return useQuery(animalsGql, {
@@ -49,12 +50,10 @@ const useAnimalsQuery = (location: string, page: number) => {
 
 export default function Home(props) {
   const [initialLocation] = useState(props.location || '')
-  const [currentPage, setCurrentPage] = useState(1)
   const router = useRouter()
 
   const location = router ? router.query.location : initialLocation
 
-  const { data } = useAnimalsQuery(location, 1)
   return (
     <div className="tw-h-fit tw-py-4">
       <Head>
@@ -77,11 +76,7 @@ export default function Home(props) {
             }}
           />
         )}
-        {location && (
-          <AnimalResults
-            animals={(data && data.animals && data.animals.animals) || []}
-          />
-        )}
+        {location && <AnimalResultsContainer location={location} />}
       </main>
     </div>
   )

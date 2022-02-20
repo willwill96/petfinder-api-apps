@@ -30,7 +30,7 @@ const EntryInterview = (props: Props) => {
     props.onSubmit(form)
   }
   return (
-    <Card className={`${styles['root']} tw-animate-slidein`}>
+    <Card className={`${styles['root']}`}>
       <div className={styles['title']}>
         <span>Enter your zip code</span>
       </div>
