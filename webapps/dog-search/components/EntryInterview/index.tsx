@@ -22,7 +22,6 @@ const EntryInterview = (props: Props) => {
       console.log('error')
       return
     }
-    console.log('trying to focus')
     inputEl.current.focus()
   }, [inputEl])
   const onSubmit = (e: React.FormEvent) => {

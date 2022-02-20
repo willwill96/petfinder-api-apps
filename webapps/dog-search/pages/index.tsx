@@ -50,7 +50,8 @@ export default function Home(props) {
   const [initialLocation] = useState(props.location || '')
   const [currentPage, setCurrentPage] = useState(1)
   const router = useRouter()
-  const location = router.query.location || initialLocation
+
+  const location = router ? router.query.location : initialLocation
 
   const { data } = useAnimalsQuery(location, 1)
   return (
