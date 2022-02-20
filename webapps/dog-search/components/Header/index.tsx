@@ -24,6 +24,7 @@ const Header = () => {
           href="https://github.com/willwill96/petfinder-api-apps"
           target="_blank"
           rel="noreferrer"
+          aria-label="Source Code"
         >
           <IconButton>
             <FontAwesomeIcon icon={faGithub} />

@@ -2,9 +2,9 @@ import React from 'react'
 import conditionallyAddClassnames from '../../utils/concat-class-names'
 import styles from './IconButton.module.css'
 
-const IconButton = (props: React.ButtonHTMLAttributes<HTMLButtonElement>) => {
+const IconButton = (props: React.ButtonHTMLAttributes<HTMLDivElement>) => {
   return (
-    <button
+    <div
       {...props}
       className={conditionallyAddClassnames(
         props.className,
@@ -12,7 +12,7 @@ const IconButton = (props: React.ButtonHTMLAttributes<HTMLButtonElement>) => {
       )}
     >
       {props.children}
-    </button>
+    </div>
   )
 }
 

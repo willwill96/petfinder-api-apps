@@ -37,6 +37,7 @@ const EntryInterview = (props: Props) => {
       <form onSubmit={onSubmit}>
         <div className="tw-my-2">
           <Input
+            aria-label="Zip Code"
             ref={inputEl}
             className="tw-text-center"
             value={locationInput}
