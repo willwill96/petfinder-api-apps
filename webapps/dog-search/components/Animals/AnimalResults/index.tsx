@@ -4,6 +4,7 @@ import styles from './AnimalResults.module.css'
 interface Animal {
   photos: {
     full: string
+    small: string
   }[]
   url: string
   name: string
@@ -17,7 +18,7 @@ const AnimalResults = (props: Props) => {
   if (props.loading) return null
 
   const animals = props.animals.filter((animal) =>
-    Boolean(animal.photos && animal.photos[0] && animal.photos[0].full)
+    Boolean(animal.photos && animal.photos[0] && animal.photos[0].small)
   )
 
   return (

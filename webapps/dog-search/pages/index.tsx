@@ -12,6 +12,7 @@ const animalsGql = gql`
         name
         photos {
           full
+          small
         }
         url
       }
