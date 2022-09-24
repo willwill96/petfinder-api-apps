@@ -1,5 +1,5 @@
 import Card from '../../Card'
-import styles from './AnimalResults.module.css'
+import styles from './AnimalResults.module.scss'
 
 interface Animal {
   photos: {

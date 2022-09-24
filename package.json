@@ -1,0 +1,21 @@
+{
+  "name": "petfinder-api-apps",
+  "private": true,
+  "description": "Mono-repo for petfinder API related apps/packages",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/willwill96/petfinder-api-apps.git"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "bugs": {
+    "url": "https://github.com/willwill96/petfinder-api-apps/issues"
+  },
+  "homepage": "https://github.com/willwill96/petfinder-api-apps#readme",
+  "devDependencies": {
+    "turbo": "^1.5.3"
+  },
+  "packageManager": "yarn@3.2.3"
+}
