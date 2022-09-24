@@ -1,5 +1,12 @@
 # petfinder-graphql-app
 
+## 1.0.1
+
+### Patch Changes
+
+- Updated dependencies [203aaf9]
+  - willwill96-petfinder-graphql@1.0.1
+
 ## 1.0.0
 
 ### Major Changes

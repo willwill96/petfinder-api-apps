@@ -1,7 +1,7 @@
 {
     "name": "petfinder-graphql-app",
     "private": true,
-    "version": "1.0.0",
+    "version": "1.0.1",
     "dependencies": {
         "apollo-server-express": "^3.6.2",
         "express": "^4.17.2",

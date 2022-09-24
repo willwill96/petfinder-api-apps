@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.1
+
+### Patch Changes
+
+- 203aaf9: Remove unused dependency
+
 ## 1.0.0
 
 ### Major Changes
