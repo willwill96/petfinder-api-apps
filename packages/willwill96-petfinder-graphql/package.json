@@ -28,7 +28,6 @@
   },
   "homepage": "https://github.com/willwill96/petfinder-api-apps#readme",
   "dependencies": {
-    "graphql-tag": "^2.12.6",
     "isomorphic-fetch": "^3.0.0",
     "node-cache": "^5.1.2",
     "query-string": "^7.1.0"
