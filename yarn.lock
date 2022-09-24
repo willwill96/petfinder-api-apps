@@ -9814,7 +9814,6 @@ __metadata:
     "@graphql-codegen/cli": ^2.4.0
     "@graphql-codegen/typescript-operations": ^2.2.2
     graphql: ^15.8.0
-    graphql-tag: ^2.12.6
     graphql-tools: ^8.2.0
     isomorphic-fetch: ^3.0.0
     node-cache: ^5.1.2
