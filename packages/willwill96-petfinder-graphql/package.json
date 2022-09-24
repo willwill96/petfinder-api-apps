@@ -4,6 +4,7 @@
   "description": "contains files and utilities to bootstrap a graphql instance wrapping the petfinder api",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": ["dist/"],
   "scripts": {
     "prebuild": "rm -rf dist/",
     "build": "tsc",
