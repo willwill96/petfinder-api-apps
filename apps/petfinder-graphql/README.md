@@ -55,14 +55,3 @@ services:
       - PLAYGROUND_ENABLED=true
 ...
 ```
-
-### Docker (locally)
-
-If you have the repo cloned locally you can run the following commands:
-
-- `docker build -t ${name} .`
-- ```
-  docker run -e PETFINDER_API_KEY={yourPetfinderAPIKey} -e PETFINDER_SECRET_KEY=${yourPetfinderSecretKey} -v
-   ${local_app_directory}:/usr/src/app -p 8080:4000 {name}
-  ```
-- open browser to localhost:8080/graphql

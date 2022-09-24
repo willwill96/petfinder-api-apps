@@ -1,19 +1,26 @@
 .root {
     /* Grid */
-    @apply @grid @grid-cols-2 @gap-4;
-    @apply lg:@grid-cols-4 sm:@grid-cols-3;
+    @apply tw-grid tw-grid-cols-12 tw-gap-4;
     /* Sizing */
-    @apply @h-fit @w-full;
+    @apply tw-w-full;
     /* Spacing */
-    @apply @p-4 lg:@px-8;
     /* Misc */
-    @apply @overflow-y-auto;
+    @apply tw-animate-fadein;
+}
+
+.animal-card {
+    /* Transition */
+    @apply tw-transition-all tw-ease-in-out tw-duration-500 hover:tw-opacity-50  active:tw-opacity-25;
+    /* Grid Sizing */
+    @apply tw-col-span-6 sm:tw-col-span-4 lg:tw-col-span-3;
 }
 
 .animal-img {
-    @apply @w-full @aspect-square @rounded-b-lg @h-full;
+    @apply tw-w-full tw-aspect-square tw-rounded-b-lg tw-h-full;
 }
 
 .card-title {
-    @apply @text-2xl @font-semibold @text-center;
+    @apply tw-text-2xl tw-font-semibold tw-text-center tw-p-1;
+    /* Text overflow */
+    @apply tw-text-ellipsis tw-overflow-hidden tw-whitespace-nowrap;
 }

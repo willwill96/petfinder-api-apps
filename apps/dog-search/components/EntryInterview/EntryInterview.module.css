@@ -1,7 +1,9 @@
 .root {
-    @apply @px-8 @py-4;
+    @apply tw-px-8 tw-py-4 tw-transition-transform tw-animate-slidein;
+    @apply tw-bg-gradient-to-b tw-from-sky-800 tw-to-emerald-800;
+
 }
 
 .title {
-    @apply @text-center @mb-10 @text-gray-200 @text-3xl;
+    @apply tw-text-center tw-mb-10 tw-text-gray-200 tw-text-3xl;
 }

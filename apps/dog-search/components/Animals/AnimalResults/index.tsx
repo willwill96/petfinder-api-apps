@@ -1,9 +1,10 @@
 import Card from '../../Card'
+import Loading from '../../Loading'
 import styles from './AnimalResults.module.scss'
 
 interface Animal {
   photos: {
-    full: string
+    medium: string
   }[]
   url: string
   name: string
@@ -14,20 +15,25 @@ interface Props {
   animals: Animal[]
 }
 const AnimalResults = (props: Props) => {
-  if (props.loading) return null
+  if (props.loading) return <Loading />
+
+  const animals = props.animals.filter((animal) =>
+    Boolean(animal.photos && animal.photos[0] && animal.photos[0].medium)
+  )
+
   return (
     <div className={styles['root']}>
-      {props.animals.map((animal, i) => {
+      {animals.map((animal, i) => {
         return (
-          <a key={i} href={animal.url}>
-            <Card className="hover:@opacity-50 @transition-all @ease-in-out @duration-500">
+          <a key={i} href={animal.url} className={styles['animal-card']}>
+            <Card>
               <div className={styles['card-title']}>
                 <span>{animal.name}</span>
               </div>
               <img
                 className={styles['animal-img']}
                 alt={`Image of ${animal.name}`}
-                src={animal.photos[0].full}
+                src={animal.photos[0].medium}
               />
             </Card>
           </a>

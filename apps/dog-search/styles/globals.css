@@ -9,7 +9,7 @@ body,
   height: 100%;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  @apply @bg-gray-200 @text-gray-200;
+  @apply tw-bg-gray-200 tw-text-gray-200;
 }
 
 * {
@@ -17,5 +17,5 @@ body,
 }
 
 input {
-  @apply @text-gray-900;
+  @apply tw-text-gray-900;
 }
