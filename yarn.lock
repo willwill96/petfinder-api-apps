@@ -3052,6 +3052,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"changesets@npm:^1.0.2":
+  version: 1.0.2
+  resolution: "changesets@npm:1.0.2"
+  checksum: b352dab13058a1c6034eb3ede4339d5310115d2ddac83b1005c7a05cbe592c725cd984fc264a26d0f6473f01b3bd31bab05301ad111d28b40bb1a3b1c1a03950
+  languageName: node
+  linkType: hard
+
 "chardet@npm:^0.7.0":
   version: 0.7.0
   resolution: "chardet@npm:0.7.0"
@@ -7126,6 +7133,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "petfinder-api-apps@workspace:."
   dependencies:
+    changesets: ^1.0.2
     turbo: ^1.5.3
   languageName: unknown
   linkType: soft
