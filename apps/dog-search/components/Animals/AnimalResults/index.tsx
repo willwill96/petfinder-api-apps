@@ -1,6 +1,6 @@
 import Card from '../../Card'
 import Loading from '../../Loading'
-import styles from './AnimalResults.module.css'
+import styles from './AnimalResults.module.scss'
 
 interface Animal {
   photos: {

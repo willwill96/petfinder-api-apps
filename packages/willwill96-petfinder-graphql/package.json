@@ -2,7 +2,8 @@
   "name": "willwill96-petfinder-graphql",
   "version": "0.0.2",
   "description": "contains files and utilities to bootstrap a graphql instance wrapping the petfinder api",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "prebuild": "rm -rf dist/",
     "build": "tsc",
@@ -20,7 +21,7 @@
   "keywords": [
     "petfinder"
   ],
-  "author": "William Will",
+  "author": "William Will @willwill96",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/willwill96/petfinder-api-apps/issues"

@@ -1,2 +1,20 @@
-**/dist/**
-**/node_modules/**
+
+
+
+# Yarn recommended ignored files
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# Build Output
+.turbo
+build/**
+.next/**
+/dist/**
+/node_modules/**
+
+# Debug / Logs
+.yarn-error.log
