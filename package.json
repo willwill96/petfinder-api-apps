@@ -15,7 +15,7 @@
   },
   "homepage": "https://github.com/willwill96/petfinder-api-apps#readme",
   "devDependencies": {
-    "changesets": "^1.0.2",
+    "@changesets/cli": "^2.24.4",
     "turbo": "^1.5.3"
   },
   "packageManager": "yarn@3.2.3"
