@@ -3,6 +3,13 @@
 .turbo
 build/**
 .next/**
-.yarn/**
+
+# Yarn recommended ignored files
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
 
 .yarn-error.log
