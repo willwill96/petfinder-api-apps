@@ -1,8 +1,5 @@
-**/dist/**
-/node_modules/**
-.turbo
-build/**
-.next/**
+
+
 
 # Yarn recommended ignored files
 .yarn/*
@@ -12,4 +9,12 @@ build/**
 !.yarn/sdks
 !.yarn/versions
 
+# Build Output
+.turbo
+build/**
+.next/**
+/dist/**
+/node_modules/**
+
+# Debug / Logs
 .yarn-error.log
