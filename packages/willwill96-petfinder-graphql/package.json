@@ -1,6 +1,6 @@
 {
   "name": "willwill96-petfinder-graphql",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "contains files and utilities to bootstrap a graphql instance wrapping the petfinder api",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
