@@ -1,5 +1,12 @@
 # dog-search
 
+## 0.0.2
+
+### Patch Changes
+
+- Updated dependencies [f6ce36f]
+  - willwill96-petfinder-graphql@1.0.2
+
 ## 0.0.1
 
 ### Patch Changes

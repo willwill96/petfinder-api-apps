@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.2
+
+### Patch Changes
+
+- f6ce36f: specify correct list of dist/ directory to publish properly
+
 ## 1.0.1
 
 ### Patch Changes
