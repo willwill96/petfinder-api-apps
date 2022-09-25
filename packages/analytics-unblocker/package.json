@@ -1,0 +1,40 @@
+{
+    "name": "analytics-unblocker",
+    "private": true,
+    "version": "0.0.0",
+    "description": "Network interceptors for browser apis ",
+    "author": "William Will @willwill96",
+    "homepage": "https://github.com/willwill96/petfinder-api-apps",
+    "license": "MIT",
+    "main": "dist/index.js",
+    "repository": {
+        "type": "ssh",
+        "url": "git@github.com:willwill96/petfinder-api-apps.git"
+    },
+    "files": [
+        "/dist"
+    ],
+    "bugs": "https://github.com/willwill96/petfinder-api-apps/issues",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "prebuild": "rm -rf dist/",
+        "build": "yarn rollup -c && yarn minify",
+        "minify": "terser dist/index.js --compress ecma=2015 --mangle -o dist/index.js"
+    },
+    "devDependencies": {
+        "@rollup/plugin-commonjs": "^22.0.2",
+        "@rollup/plugin-node-resolve": "^14.1.0",
+        "@rollup/plugin-replace": "^4.0.0",
+        "@rollup/plugin-typescript": "^8.5.0",
+        "rollup": "^2.79.1",
+        "shared-tsconfig": "workspace:*",
+        "terser-webpack-plugin": "^5.3.6",
+        "ts-loader": "^9.4.1",
+        "webpack": "^5.74.0",
+        "webpack-cli": "^4.10.0"
+    },
+    "dependencies": {
+        "browser-network-url-rewriter": "workspace:*",
+        "terser": "^5.15.0"
+    }
+}

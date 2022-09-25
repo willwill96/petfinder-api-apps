@@ -1,0 +1,13 @@
+{
+    "extends": "shared-tsconfig",
+    "compilerOptions": {
+        "outDir": "./dist",
+        "esModuleInterop": false,
+        "declaration": true,
+        "alwaysStrict": false,
+        "module": "ES6",
+        "noImplicitUseStrict": true
+    },
+    
+    "include": ["src/**/*.ts"]
+}

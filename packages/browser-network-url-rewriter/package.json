@@ -1,0 +1,30 @@
+{
+    "name": "browser-network-url-rewriter",
+    "private": true,
+    "version": "0.0.0",
+    "description": "Network interceptors for browser apis ",
+    "author": "William Will @willwill96",
+    "homepage": "https://github.com/willwill96/petfinder-api-apps",
+    "license": "MIT",
+    "main": "dist/index.js",
+    "exports": {
+        ".": "./dist/index.js"
+    },
+    "repository": {
+        "type": "ssh",
+        "url": "git@github.com:willwill96/petfinder-api-apps.git"
+    },
+    "files": [
+        "/dist"
+    ],
+    "bugs": "https://github.com/willwill96/petfinder-api-apps/issues",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "prebuild": "rm -rf dist/",
+        "build": "yarn prebuild && tsc -b",
+        "minify": "terser dist/browser-network-url-rewriter.js --compress ecma=2015 --mangle -o dist/browser-network-url-rewriter.js"
+    },
+    "devDependencies": {
+        "shared-tsconfig": "workspace:*"
+    }
+}

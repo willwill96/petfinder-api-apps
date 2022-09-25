@@ -1,0 +1,7 @@
+.root {
+  @apply  tw-w-full tw-flex tw-items-center tw-justify-center;
+}
+
+.link {
+  @apply tw-text-black hover:tw-underline;
+}
