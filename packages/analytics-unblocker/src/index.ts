@@ -1,6 +1,5 @@
-import { browserNetworkUrlRewriter} from 'browser-network-url-rewriter'
+import { browserNetworkUrlRewriter } from 'browser-network-url-rewriter'
 import urlRewrite from './url-rewrite'
-
-(function() {
-    browserNetworkUrlRewriter(urlRewrite)
+;(function () {
+  browserNetworkUrlRewriter(urlRewrite)
 })()

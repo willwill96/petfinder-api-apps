@@ -8,14 +8,14 @@ const executableSchema = makeExecutableSchema(schema)
 
 const runIntrospectionQuery = () => {
   graphql(executableSchema, getIntrospectionQuery())
-    .then(result => {
+    .then((result) => {
       // Write schema definition
       fs.writeFileSync(
         path.join(__dirname, `../data/schema.json`),
         JSON.stringify(result, null, 2)
       )
     })
-    .catch(err => {
+    .catch((err) => {
       console.log(err)
       console.error('[error] failed to update schema. is the server running?')
       process.exit(1)

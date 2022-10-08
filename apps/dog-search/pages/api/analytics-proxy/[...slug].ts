@@ -3,7 +3,7 @@ import httpProxy from 'http-proxy'
 
 function getIpFromReq(req) {
   // get the client's IP address
-  var bareIP =
+  const bareIP =
     ':' +
     ((req.connection.socket && req.connection.socket.remoteAddress) ||
       req.headers['x-forwarded-for'] ||
