@@ -1,6 +1,6 @@
 const domains = [
   'doubleclick.net',
-  'stats.g.doublick.net',
+  'stats.g.doubleclick.net',
   'tagassistant.google.com',
   'googletagmanager.com',
   'analytics.google.com',
