@@ -29,7 +29,7 @@ const httpProxyMiddleware = async (
   if (!req.url) {
     throw new Error(BAD_REQUEST_URL)
   }
-  const urlMatch = req.url.match(/\/api\/analytics-proxy\/([^\/]*)\/(.*)/)
+  const urlMatch = req.url.match(/\/api\/analytics-proxy\/([^/]*)\/(.*)/)
   if (!urlMatch || !urlMatch[1]) {
     throw new Error(BAD_REQUEST_URL)
   }
@@ -47,7 +47,7 @@ const httpProxyMiddleware = async (
     proxy
       .once('proxyReq', (proxyReq, req) => {
         proxyReq.path = proxyReq.path.replace(
-          /\/api\/analytics-proxy\/([^\/]*)/,
+          /\/api\/analytics-proxy\/([^/]*)/,
           ''
         )
         proxyReq.path =

@@ -1,23 +1,8 @@
 import Head from 'next/head'
 import { useState } from 'react'
-import { gql } from '@apollo/client'
 import EntryInterview from '../components/EntryInterview'
 import { useRouter } from 'next/router'
 import AnimalResultsContainer from '../containers/AnimalResults'
-
-const animalsGql = gql`
-  query AnimalsQuery($location: String, $page: Int) {
-    animals(location: $location, page: $page, limit: 20) {
-      animals {
-        name
-        photos {
-          medium
-        }
-        url
-      }
-    }
-  }
-`
 
 export default function Home(props) {
   const [initialLocation] = useState(props.location || '')

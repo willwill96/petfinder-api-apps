@@ -3098,7 +3098,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"analytics-unblocker@workspace:packages/analytics-unblocker":
+"analytics-unblocker@workspace:*, analytics-unblocker@workspace:packages/analytics-unblocker":
   version: 0.0.0-use.local
   resolution: "analytics-unblocker@workspace:packages/analytics-unblocker"
   dependencies:
@@ -4841,6 +4841,7 @@ __metadata:
     "@types/http-proxy": ^1.17.9
     "@types/react": 17
     "@types/react-dom": 17
+    analytics-unblocker: "workspace:*"
     apollo-server-micro: 3.10.2
     autoprefixer: ^10.4.2
     deepmerge: ^4.2.2

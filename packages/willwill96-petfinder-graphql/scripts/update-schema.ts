@@ -1,6 +1,6 @@
 import path from 'path'
 import fs from 'fs'
-import { graphql, getIntrospectionQuery, printSchema } from 'graphql'
+import { graphql, getIntrospectionQuery } from 'graphql'
 import { makeExecutableSchema } from 'graphql-tools'
 import schema from '../src/schema'
 

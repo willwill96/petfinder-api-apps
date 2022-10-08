@@ -7,7 +7,7 @@ const domains = [
 ]
 
 const urlRewrite = (input: string): string => {
-  const regexMatch = input.match(/(https?:\/\/)([^\/\?]*)(\/|\?)?(.*)/)
+  const regexMatch = input.match(/(https?:\/\/)([^/?]*)(\/|\?)?(.*)/)
   console.log('input', input)
   console.log('regexMatch', regexMatch)
   if (regexMatch && domains.includes(regexMatch[2])) {

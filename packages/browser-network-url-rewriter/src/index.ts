@@ -4,7 +4,7 @@ export function browserNetworkUrlRewriter(
   // alias window in this fn to allow for better minification
   const _window = window
   // Intercept Fetch
-  const tempFn: Function = _window.fetch
+  const tempFn = _window.fetch
   _window.fetch = function (this: any, resource, init) {
     if (typeof resource === 'object') {
       if ('href' in resource) {
@@ -22,6 +22,7 @@ export function browserNetworkUrlRewriter(
   }
 
   // Intercept XMLHttpRequest
+  // eslint-disable-next-line @typescript-eslint/ban-types
   const tempXmlOpen: Function = _window.XMLHttpRequest.prototype.open
   _window.XMLHttpRequest.prototype.open = function (...args) {
     const [_, resource, ...rest] = args
