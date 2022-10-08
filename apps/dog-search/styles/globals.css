@@ -11,6 +11,9 @@ body,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   @apply tw-bg-gray-200 tw-text-gray-200;
 }
+p a {
+  @apply tw-text-blue-500 hover:tw-underline;
+}
 
 * {
   box-sizing: border-box;

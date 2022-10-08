@@ -6,6 +6,9 @@
     "type": "git",
     "url": "git+https://github.com/willwill96/petfinder-api-apps.git"
   },
+  "scripts": {
+    "lint": "eslint . "
+  },
   "workspaces": [
     "apps/*",
     "packages/*"
@@ -16,6 +19,9 @@
   "homepage": "https://github.com/willwill96/petfinder-api-apps#readme",
   "devDependencies": {
     "@changesets/cli": "^2.24.4",
+    "@typescript-eslint/eslint-plugin": "^5.39.0",
+    "eslint": "^8.25.0",
+    "eslint-config-shared": "workspace:^",
     "turbo": "^1.5.3"
   },
   "packageManager": "yarn@3.2.3"

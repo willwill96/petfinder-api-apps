@@ -1,4 +1,6 @@
-import getAccessToken, { Options as AccessTokenOptions } from '../utils/get-petfinder-access-token'
+import getAccessToken, {
+  Options as AccessTokenOptions,
+} from '../utils/get-petfinder-access-token'
 import fetch from 'isomorphic-fetch'
 
 const generateContext = (options: AccessTokenOptions) => {

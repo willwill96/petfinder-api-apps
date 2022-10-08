@@ -15,7 +15,11 @@ import {
   Types,
 } from '../../types/graphql-types'
 
-const animals = async (_, args: QueryAnimalsArgs, context): Promise<Animals> => {
+const animals = async (
+  _,
+  args: QueryAnimalsArgs,
+  context
+): Promise<Animals> => {
   const { fetchPetfinderRoute } = context
   const res = await fetchPetfinderRoute(
     `animals?${queryString.stringify(args, {
@@ -25,7 +29,7 @@ const animals = async (_, args: QueryAnimalsArgs, context): Promise<Animals> => 
   const { animals, ...rest } = res
   return {
     ...rest,
-    animals: animals.map(animal => {
+    animals: animals.map((animal) => {
       const { organization_id, ...rest } = animal
       return {
         ...rest,

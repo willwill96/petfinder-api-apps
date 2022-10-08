@@ -7,8 +7,8 @@ interface AccessToken {
 }
 
 export interface Options {
-    petfinderApiKey: string
-    petfinderSecretKey: string
+  petfinderApiKey: string
+  petfinderSecretKey: string
 }
 
 const fetchAccessToken = async (options: Options): Promise<AccessToken> => {
@@ -32,7 +32,7 @@ const PetfinderAccessTokenCache = new NodeCache()
 
 const TWO_MINUTES_IN_SECONDS = 60 * 2
 
-const bufferExpiration = expirationTime =>
+const bufferExpiration = (expirationTime) =>
   expirationTime - TWO_MINUTES_IN_SECONDS
 
 const getAccessToken = async (options: Options): Promise<string> => {
