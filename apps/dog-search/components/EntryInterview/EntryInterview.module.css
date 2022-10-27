@@ -1,6 +1,6 @@
 .root {
     @apply tw-px-8 tw-py-4 tw-transition-transform tw-animate-slidein;
-    @apply tw-bg-gradient-to-b tw-from-sky-800 tw-to-emerald-800;
+    @apply tw-bg-sky-800;
 
 }
 
