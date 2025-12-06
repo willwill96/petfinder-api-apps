@@ -1,3 +1,7 @@
+# ARCHIVED
+
+As of December 2, 2025 Petfinder no longer provide an API for accessing data. As such there is no need for this project.
+
 # petfinder-api-apps
 Mono-repo for apps relating to Petfinder API
 
