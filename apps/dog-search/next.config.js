@@ -16,4 +16,7 @@ module.exports = {
     })
     return config
   },
+  experimental: {
+    optimizeCss: true,
+  },
 }
